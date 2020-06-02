@@ -3,12 +3,12 @@ package cn.zj.cq;
 public class Demo04Main {
 	public static void main(String[] args) {
 		Demo04FanxinMethod df = new Demo04FanxinMethod();
-		//Äã´«µİÊ²Ã´ÀàĞÍËû¾ÍÊÇÊ²Ã´ÀàĞÍ
-		df.method("ÕâÊÇStringÀàĞÍ");
+		//ä½ ä¼ é€’ä»€ä¹ˆç±»å‹ä»–å°±æ˜¯ä»€ä¹ˆç±»å‹
+		df.method("è¿™æ˜¯Stringç±»å‹");
 		df.method('A');
 		df.method(5);
 		df.method(true);
-		
-		Demo04FanxinMethod.jump("´«µİString");
+		System.out.print("666");
+		Demo04FanxinMethod.jump("ä¼ é€’String");
 	}
 }
