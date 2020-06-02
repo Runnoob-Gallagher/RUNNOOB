@@ -9,7 +9,7 @@ public class Demo01Collection {
 		colA.add("个税");
 		colA.add("社保");
 		colA.add("电税");
-		colA.add("自然人网厅");
+		colA.add("自然网厅");
 		colA.add("网厅");
 		System.out.println(colA);
 		System.out.println("验证的时候对不对：" + colA.contains("贫困户"));
