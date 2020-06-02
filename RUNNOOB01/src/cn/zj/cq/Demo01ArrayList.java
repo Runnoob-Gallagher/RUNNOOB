@@ -23,7 +23,7 @@ public class Demo01ArrayList {
 		hash.add("杨宗纬");
 		hash.add("李代沫");
 		hash.add("李行亮");
-		hash.add("沫");
+		hash.add("泡沫");
 		hash.add("李沫");
 		hash.add("代沫");
 		hash.add("李代");
