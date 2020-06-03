@@ -1,5 +1,5 @@
 package cn.zi.cq02;
-//这个demo是用来测试适用泛型的好处及缺点
+//这个demo是用来测试适用泛型的好处及缺点：指定类型就不会出现转换异常
 import java.util.ArrayList;
 import java.util.Iterator;
 
