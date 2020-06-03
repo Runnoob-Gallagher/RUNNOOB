@@ -20,7 +20,7 @@ import java.util.List;
 	         ArrayIndexOutOfBoundsException:数组索引越界异常
 	         StringIndexOutOfBoundsException:字符串索引越界异常
 	  */
-	 public class Demo01List {
+public class Demo01List {
 	     public static void main(String[] args) {
 	         //创建一个List集合对象,多态
 	         List<String> list = new ArrayList<>();
@@ -33,7 +33,7 @@ import java.util.List;
 	         //打印集合
 	         System.out.println(list);//[a, b, c, d, a]  不是地址重写了toString
 
-	         //public void add(int index, E element): 将指定的元素，添加到该集合中的指定位置上。
+	        /* //public void add(int index, E element): 将指定的元素，添加到该集合中的指定位置上。
 	         //在c和d之间添加一个itheima
 	         list.add(3,"itheima");//[a, b, c, itheima, d, a]
 	         System.out.println(list);
@@ -73,7 +73,7 @@ import java.util.List;
 	         String r = list.get(5);//IndexOutOfBoundsException: Index 5 out-of-bounds for length 5
 	         System.out.println(r);
 
-	     }
+	     }*/
 	 }
 
 }
