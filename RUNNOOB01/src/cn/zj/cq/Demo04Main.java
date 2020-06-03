@@ -8,7 +8,7 @@ public class Demo04Main {
 		df.method('A');
 		df.method(5);
 		df.method(true);
-		System.out.print("999");
+		System.out.print("9999999");
 		Demo04FanxinMethod.jump("娴肩娀锟芥壌tring");
 	}
 }
