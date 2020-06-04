@@ -10,9 +10,11 @@ public class Demo03FanXin {
 		System.out.println("========");
 		
 		df.methodB(999);
-		df.methodB("String");
+		df.methodB("啥子类型都可以");
 		df.methodB(true);
 		
+		System.out.println("===========");
+		df.methodC("这个方法只能说是String类型");
 		//这里我开始使用的类名时Demo03FanXin。这样是不对的，因为静态方法并不在这个类下
 		Demo03FanXinMethod.methodB(666);
 		Demo03FanXinMethod.methodB("String");
