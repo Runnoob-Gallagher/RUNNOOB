@@ -19,7 +19,7 @@ public final class Scanner implements Iterator<String>{
  * 
  * }
  */
-public class Demo03FanXinImplA implements Demo03FanXinJiekou<String> {
+public class Demo03FanXinImplA implements Demo03FanXinJiekou<String> {//这里的String就是指定接口的泛型
 
 	@Override
 	public void method(String str) {
