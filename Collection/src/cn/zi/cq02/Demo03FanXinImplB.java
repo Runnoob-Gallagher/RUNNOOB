@@ -10,7 +10,7 @@ public class ArrayList<E> implements List<E>{
     public boolean add(E e) {}
     public E get(int index) {}
 }
-*/
+*/ 
 public class Demo03FanXinImplB<I> implements Demo03FanXinJiekou<I>{
 
 	@Override

@@ -16,7 +16,7 @@ public final class Scanner implements Iterator<String>{
  * @Override public void method(I i) { // TODO Auto-generated method stub
  * 
  * }
- * 
+ *  
  * }
  */
 public class Demo03FanXinImplA implements Demo03FanXinJiekou<String> {//这里的String就是指定接口的泛型

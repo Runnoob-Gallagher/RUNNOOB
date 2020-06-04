@@ -6,7 +6,7 @@ public class Demo03FanXin {
 		df.methodA(6);
 		df.methodA("String");
 		df.methodA('A');
-		
+		 
 		System.out.println("========");
 		
 		df.methodB(999);

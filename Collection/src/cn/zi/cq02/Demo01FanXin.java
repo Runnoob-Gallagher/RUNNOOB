@@ -8,7 +8,7 @@ public class Demo01FanXin {
 		ArrayList arrA = new ArrayList();//当不适用泛型的时候，类型为Object
 		arrA.add("这是String类型");
 		arrA.add(5);
-		arrA.add(true);
+		arrA.add(true); 
 		for(Object obj:arrA) {
 			System.out.println(obj);
 		}

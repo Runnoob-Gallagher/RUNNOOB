@@ -6,7 +6,7 @@ package cn.zi.cq02;
  * Demo02FanXinClass dc = new Demo02FanXinClass();
  * dc.setName("因为name的类型时String，所以这里只能是String类型"); } 
  * }
- */
+ */ 
 public class Demo02FanXin { 
 	public static void main(String[] args) {
 		Demo02FanXinClass<String> dc = new Demo02FanXinClass<String>();

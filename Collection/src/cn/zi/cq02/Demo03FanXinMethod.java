@@ -9,7 +9,7 @@ public class Demo03FanXinMethod {
 	public  <M> void methodA(M m) {
 		System.out.println(m);
 	}
-	//定义一个指定类型的泛型
+	//定义一个指定类型的泛型 
 	public <String> void methodC(String str) {
 		System.out.println(str);
 	}

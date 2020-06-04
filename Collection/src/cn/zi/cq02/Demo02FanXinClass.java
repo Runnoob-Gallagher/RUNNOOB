@@ -12,7 +12,7 @@ public class Classname<E> --->ÕâÀïµÄE´ú±í±íÊ¾ÈÎÒâµÄÀàĞÍ£¬´´½¨¶ÔÏóÊ±Ö¸¶¨Ê²Ã´ÀàĞÍË
  * public void setName(String name) { this.name = name; }
  * 
  * }
- */
+ */ 
 
 public class Demo02FanXinClass<E> {
 	private E name;
