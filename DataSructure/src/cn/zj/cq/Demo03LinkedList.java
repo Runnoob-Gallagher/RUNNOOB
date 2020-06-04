@@ -19,6 +19,7 @@ public boolean isEmpty():如果列表不包含元素，则返回true*/
 public class Demo03LinkedList {
 	public static void main(String[] args) {
 		List<String> list = new LinkedList<String>();
+		List listA = new LinkedList();
 		list.add("英语");
 		list.add("美术");
 		list.add("数学");
