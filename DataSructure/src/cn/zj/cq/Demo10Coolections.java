@@ -23,6 +23,6 @@ public class Demo10Coolections {
 		System.out.println(list);
 		Collections.sort(list);
 		System.out.println(list);
-		Collections.sort(list, c);
+		//Collections.sort(list, c);
 	}
 }
