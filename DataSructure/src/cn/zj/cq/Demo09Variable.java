@@ -16,7 +16,7 @@ public class Demo09Variable {
 		}
 		public static int methodB(int...var) {
 			int sum = 0;
-			for(int i:var) {
+			for(int i:var) {//注意这里使用的循环方法，因为你这里元素个数不确定肯定不能使用普通for循环；
 				sum += i;
 			}
 			return sum;
