@@ -1,7 +1,10 @@
 package cn.zj.cq;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 //这个demo是练习Entry；即Map集合的第二种遍历方式
 /*Map.Entry<K,V>:在Map接口中有一个内部接口Entry
@@ -20,6 +23,15 @@ public class Demo03EntrySet {
 		mapA.put("唐僧", 2);
 		mapA.put("沙僧", 3);
 		mapA.put("猪八戒", 4);
-		System.out.println(mapA);
+		//System.out.println(mapA);
+		Set<Map.Entry<String, Integer>> set = mapA.entrySet();//Map.Entry表示外部类引用内部类(你看旁边的列表)----->通过Map找到Entry：---》static interface Map.Entry<K,V> 映射项（键-值对）。 
+		Iterator<Entry<String, Integer>> it = set.iterator();
+		while(it.hasNext()) {
+			Entry<String, Integer> key = it.next();
+			System.out.println(key);
+		}
+		for(Entry<String,Integer> entry:set) {
+			System.out.println(entry);
+		}
 	}
 }
