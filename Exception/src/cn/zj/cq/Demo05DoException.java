@@ -32,7 +32,7 @@ public class Demo05DoException {  //注意编译异常就必须使用throws抛出异常
 			throw new IOException("后缀名不对");
 		}
 		if(!str.equals(filepath)) { //if(str != filepath) 
-			throw new FileNotFoundException("你的文件路径有问题哟");
+			throw new FileNotFoundException("你的文件路径有点问题哟");
 		}
 		
 	}
