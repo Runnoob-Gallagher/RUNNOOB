@@ -8,7 +8,7 @@ package cn.zj.cq;
 4.调用Thread类中的方法start方法，开启新的线程，执行run方法
 	void start() 使线程开始执行，java虚拟机调用线程的run方法。--->这里的调用start视为了让他来执行论run方法，因为他会开辟一条新的线程
 	结果就是两个线程并发的运行；当线程（main线程）和另一个线程（创建新的行程，执行run方法）
-	多次启动一个线程是非法的。特别当前线程已经结束执行后，不能重新启动*/
+	多次启动一个线程是非法的---->java.lang.IllegalThreadStateException 看21行   特别当前线程已经结束执行后，不能重新启动*/
 //java是抢占式的
 public class Demo02Thread {
 	public static void main(String[] args) {
