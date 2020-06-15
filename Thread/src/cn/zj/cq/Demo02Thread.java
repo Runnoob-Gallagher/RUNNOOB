@@ -1,5 +1,5 @@
 package cn.zj.cq;
-//创建多线程的第一种方式：创建thread类的子类
+//创建多线程的第一种方式：创建thread类的子类  //但是这个有局限性，因为他是继承，所以只有一个直接父类；接口就不一样了
 /*java.lang.Thread类:是描述线程的类，要实现多线程程序就必须时间Thread类
 步骤：
 1.创建一个Thread类的子类
@@ -14,10 +14,10 @@ public class Demo02Thread {
 	public static void main(String[] args) {
 		//这里注意了，如果我将循环放在前面他就自己按顺序执行了。但是多线程在前面，他就会多线程
 		Demo02MyThread dm = new Demo02MyThread();
-		dm.start();
+		//dm.start();
 		for(int i = 0;i<10;i++) {
 			System.out.println("main" + i);
 		}
-		dm.start();
+		//dm.start(); //这里的意思是要先开启线程，否则就会按照顺序去执行前面的循环，然后在开启线程了！
 	}
 }
