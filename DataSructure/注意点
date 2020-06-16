@@ -7,3 +7,7 @@
 为什么LinkedList不能使用多态
 
 熟悉红黑树？  链表？  如何确定顺序？ 哈希表是什么  原理是什么  为什么超过8就会自动转为红黑树
+
+boolean addAll(Collection<? extends E> c)
+boolean containsAll(Collection<?> c)
+boolean removeAll(Collection<?> c）
