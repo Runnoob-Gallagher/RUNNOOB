@@ -21,7 +21,7 @@ public class Demo09ThreadProblem implements Runnable{
 		while(true) {
 			if(ticket > 0) {
 				try {
-					Thread.sleep(100);
+					Thread.sleep(100);//让线程睡眠为什么会增加重复执行的概率
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

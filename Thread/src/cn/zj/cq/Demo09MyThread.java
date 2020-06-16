@@ -11,3 +11,13 @@ public class Demo09MyThread {
 		thC.start();
 	}
 }
+
+//买票出现重复的票和负数的票   自己画图解决
+/*
+ * Thread-2现在的票是100 
+ * Thread-0现在的票是100
+ * 
+ * Thread-1现在的票是1 
+ * Thread-2现在的票是0 
+ * Thread-0现在的票是-1
+ */
