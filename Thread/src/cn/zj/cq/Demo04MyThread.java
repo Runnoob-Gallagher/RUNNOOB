@@ -5,6 +5,6 @@ public class Demo04MyThread {
 		Demo04ChangeThread dc = new Demo04ChangeThread("ThreadB");
 		dc.start();
 		//dc.setName("ThreadA");
-		
+		 
 	}
 }

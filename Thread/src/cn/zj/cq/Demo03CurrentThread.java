@@ -1,7 +1,7 @@
 package cn.zj.cq;
 //这个demo是用以获取当前的线程名
 public class Demo03CurrentThread extends Thread{
-	@Override
+	@Override 
 	public void run() {
 		// TODO Auto-generated method stub
 		/*
