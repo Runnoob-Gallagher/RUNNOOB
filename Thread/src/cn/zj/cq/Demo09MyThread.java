@@ -8,6 +8,6 @@ public class Demo09MyThread {
 		Thread thC = new Thread(dp);
 		thA.start();
 		thB.start();
-		//thC.start();
+		thC.start();
 	}
 }
