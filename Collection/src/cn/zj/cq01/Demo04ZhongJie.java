@@ -1,5 +1,6 @@
 package cn.zj.cq01;
 
+import java.io.ObjectInputStream.GetField;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -18,5 +19,6 @@ public class Demo04ZhongJie {
 		collB.add("µÚÈý½Ú");
 		collA.addAll(collB);
 		System.out.println(collA);
+		System.out.println(getClass());
 	}
 }
