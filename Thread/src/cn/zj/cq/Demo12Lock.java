@@ -3,6 +3,7 @@ package cn.zj.cq;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+<<<<<<< HEAD
 //解决线程安全的问题第三个方法：使用lock锁
 //java.util.concurrent.locks.ReentrantLock implements Lock;
 /*Lock 实现提供了比使用 synchronized 方法和语句可获得的更广泛的锁定操作。此实现允许更灵活的结构，可以具有差别很大的属性，可以支持多个相关的 Condition 对象。 
@@ -51,3 +52,28 @@ public class Demo12Lock implements Runnable {
 	}
 
 }
+=======
+public class Demo12Lock implements Runnable {
+	private int money = 50;
+	Lock lock = new ReentrantLock();
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		lock.lock(); 
+		try {
+			Thread.sleep(100);
+			while(money>0) {
+				System.out.println(Thread.currentThread().getName()+" "+money);
+				money--;
+			}
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			lock.unlock();
+		}
+			}
+	}
+
+
+>>>>>>> remotes/Gallagher/master

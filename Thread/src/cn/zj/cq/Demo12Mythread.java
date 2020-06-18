@@ -6,11 +6,18 @@ public class Demo12Mythread {
 		Thread thA = new Thread(dl);
 		Thread thB = new Thread(dl);
 		Thread thC = new Thread(dl);
+<<<<<<< HEAD
 		thA.setName("线程A");
 		thB.setName("线程B");
 		thC.setName("线程C");
+=======
+>>>>>>> remotes/Gallagher/master
 		thA.start();
 		thB.start();
 		thC.start();
 	}
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> remotes/Gallagher/master
