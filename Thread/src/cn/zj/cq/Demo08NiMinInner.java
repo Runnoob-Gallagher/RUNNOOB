@@ -14,7 +14,7 @@ public class Demo08NiMinInner {
 				// TODO Auto-generated method stub
 				System.out.println(currentThread().getName());
 			}
-		}.start();
+		}.start(); 
 		new Thread(new Runnable() {
 
 			@Override
