@@ -14,7 +14,7 @@ public class Demo01Thread extends Thread{
 	public static void main(String[] args) {
 		Demo01Person dpA = new Demo01Person("Gallagher");
 		dpA.run();
-		System.out.println(0/0); //Exception in thread "main"  说明这是主线程main
+		//System.out.println(0/0); //Exception in thread "main"  说明这是主线程main
 		Demo01Person dpB = new Demo01Person("YangJie");
 		dpB.run(); 
 	}
