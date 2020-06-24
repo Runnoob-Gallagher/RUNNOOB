@@ -15,6 +15,8 @@ false---->没包子 包子铺线程生产包子*/
 public class Demo01BaoZiPu extends Thread{
 	//1.在成员位置，创建一个包子对象
 	private Demo01BaoZi dpz;
+	
+	private Demo01BaoZi dpzA = new Demo01BaoZi();
 	//2.创建带参数的构造方法为包子变量赋值
 	public Demo01BaoZiPu(Demo01BaoZi dpz) {
 			this.dpz = dpz;

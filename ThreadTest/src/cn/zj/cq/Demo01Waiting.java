@@ -1,5 +1,6 @@
 package cn.zj.cq;
-等待与唤醒机制：wait和notify是线程中的一种协作机制
+
+/*等待与唤醒机制：wait和notify是线程中的一种协作机制
 一、唤醒等待中的方法
 wait：线程不在活动，不再参与调度，进入到wait set(?) 不会浪费CPU资源，这里和Sleep是不一样的（？），sleep相当于一个暂停，
 	  但是实际上他还是占用着资源的。这个时候线程状态就是WAITING
@@ -15,7 +16,7 @@ notifyal：唤醒全部等待中wait set的线程
 	也就是说还是要和其他人进行竞争，竞争到了才会进入到runnable状态。否则还是从wait set到entry set(?)
 2.wait和notify方法必须有同一个锁对象调用：因为---> void notify() 唤醒在此对象监视器上等待的单个线程。(API) 
 3.wait和notify都是属于Object类的方法（？和Thread之间的区别，为什么不是Thread类中的方法）。所以锁对象可以是任何对象，都能调用该方法
-4.wait和notify必须在同步代码块和同步函数中使用，因为他们属于同一个锁对象。只有在同步方法和同步函数中才有锁对象(?)
+4.wait和notify必须在同步代码块和同步函数中使用，因为他们属于同一个锁对象。只有在同步方法和同步函数中才有锁对象(?)*/
 public class Demo01Waiting {
 
 }
