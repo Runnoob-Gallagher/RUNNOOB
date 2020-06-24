@@ -5,8 +5,7 @@ public class Demo06Game {
 		Demo06Hero dh = new Demo06Hero();
 		dh.setName("压缩");
 		/*
-		 * dh.setSkill(new Demo06SkillImp());//传入接口的实现类 相当于Demo06Skill skill = new
-		 * Demo06SkillImp(); dh.attack()
+		 * dh.setSkill(new Demo06SkillImp());//传入接口的实现类 相当于Demo06Skill skill = new Demo06SkillImp(); dh.attack()
 		 */;
 		 Demo06Skill ds = new Demo06Skill() {
 
