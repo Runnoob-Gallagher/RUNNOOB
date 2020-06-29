@@ -7,16 +7,16 @@ public class Demo02Totoerise implements Runnable{
 		// TODO Auto-generated method stub
 		for(int i=0;i<=20;i++){
 			boolean flag = Over(i);
-				if(flag ) {
+				if(flag ) { 
 					break;
-				} 
-			
-			System.out.println("当前是" + Thread.currentThread().getName()+"跑了"+i+"米");
+				}  
+				System.out.println("当前是" + Thread.currentThread().getName()+"跑了"+i+"米");
+
 		}
 		
 	}
 	public boolean Over(int steps) {
-		if(winner != null) {//说明已经存在胜利者了
+		if(winner != null) {//说明已经存在胜利者了，如果取消了会出现两个线程同时写入winner是谁，这个就是当出现winner就停止
 			return true;
 		}else { 
 			if(steps >= 20) {
