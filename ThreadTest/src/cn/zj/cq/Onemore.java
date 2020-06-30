@@ -1,46 +1,41 @@
 package cn.zj.cq;
 
+/*设计龟兔赛跑：
+	1.确定赛道的长度
+	2.开始跑 开启线程同时跑 
+	3.确定胜利条件*/
 public class Onemore implements Runnable{
-	private int stance = 100;
+	//确定跑道长度
+	private int chang = 30;
+	//定义胜利者
 	private String Winer;
-	@Override
-	public void run() {//先来确定跑的米数
+	@Override 
+	public void run() {
+		if(Thread.currentThread().getName() == "兔子") {
+			try {
+				Thread.sleep(1);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		// TODO Auto-generated method stub
-		for(int i=0;i<=stance;i++) { 
-			if(Thread.currentThread().getName() == "兔子") {
-				try {
-					Thread.sleep(1);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+		while(true) {
+			for(int i=0;i<=chang;i++) { 
+				System.out.println(Thread.currentThread().getName()+"跑了"+i+"米");
+				if(Winer != null) {
+					break;
+				}else if(i>=chang) {
+					Winer = Thread.currentThread().getName();
+					System.out.println("胜利者是"+ Winer);
 				}
 			}
-			boolean flag = Over( i);
-			if(flag) {
-				break; 
-			}
-			System.out.println("当前"+Thread.currentThread().getName()+"跑了"+i+"米");//打印当前线程
+			break;
 		}
-	} 
-	private boolean Over(int i) {
-		// TODO Auto-generated method stub
-		if(Winer != null) {
-						return true;
-		}else if(i>=stance){
-			Winer = Thread.currentThread().getName();
-			System.out.println("赢家是："+Winer);
-			return true;
-		} 
-	{
-			return false;
-		}
-		
-	
 	}
 	public static void main(String[] args) {
-		Onemore om = new Onemore();
-		new Thread(om,"乌龟").start();
-		new Thread(om,"兔子").start();
+		Onemore onemore = new Onemore();
+		new Thread(onemore, "兔子").start();
+		new Thread(onemore, "乌龟").start();
 	}
-
 }
