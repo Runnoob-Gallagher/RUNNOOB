@@ -19,7 +19,7 @@ public class Demo04Gu extends Thread{
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-				}else{
+				}
 					bz.notify();//这里唤醒顾客线程
 					System.out.println("已经唤醒，顾客吃包子");
 					try {
@@ -31,7 +31,7 @@ public class Demo04Gu extends Thread{
 					System.out.println("顾客吃完包子");
 					bz.flag=false;
 					System.out.println("现在没包子了");
-				}
+				
 			}
 		}
 		
