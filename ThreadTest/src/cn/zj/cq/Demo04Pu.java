@@ -9,7 +9,7 @@ public class Demo04Pu extends Thread {
 	@Override
 	public void run() {
 		int count = 0;
-		while(true) {
+		while(true) { 
 			synchronized (bz) {//使用线程同步synchronized
 				// TODO Auto-generated method stub
 				if(bz.flag) {//这里为真说明有包子，那么包子铺线程就等待。注意你现在是在包子铺线程下！！！！

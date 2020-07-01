@@ -4,8 +4,8 @@ public class Demo04Gu extends Thread{
 	private  Demo04BaoZi bz;
 	public Demo04Gu(Demo04BaoZi bz) {//同前面的
 		// TODO Auto-generated constructor stub
-		this.bz=bz;
-	}
+		this.bz=bz; 
+	} 
 	@Override
 	public void run() {
 		while(true) {

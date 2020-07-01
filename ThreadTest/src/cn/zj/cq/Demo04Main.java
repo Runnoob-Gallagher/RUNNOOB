@@ -12,7 +12,7 @@ public class Demo04Main {
 		Demo04BaoZi bz = new Demo04BaoZi();
 		new Demo04Pu(bz).start();
 		new Demo04Gu(bz).start();
-		
+		 
 	}
 }
  
