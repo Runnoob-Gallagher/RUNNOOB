@@ -1,6 +1,7 @@
 package 匿名内部类;
 
 class Demo02Test{
+<<<<<<< HEAD
 	private String MZ = "A";
 	private void methodOuter() {
 	 String MZ = "B";  //这个无法访问！！！！！
@@ -27,6 +28,25 @@ class Demo02Test{
 	 * System.out.println(name);
 	 */
 	  public static void main(String[] args) {
+=======
+	 void A() {
+		class B{ 
+			void C(){ 
+				class D{
+					//    d.E();开始我是写在这里的，但是呢报错：因为方法E()还没有定义呢，你怎么调用
+						void E() {
+						System.out.println("怎么访问呢：因为局部内部类在方法中，只能通过方法来访问，就从内至外一层一层访问");
+					}
+				}
+				D d = new D();
+				d.E();
+			}
+		}
+		B b = new B();
+		b.C();
+	}
+	 public static void main(String[] args) {
+>>>>>>> a6dbd7774b5478ec0677739a0eedec518f83e1c1
 		Demo02Test dt = new Demo02Test();
 		dt.methodOuter();
 	}
