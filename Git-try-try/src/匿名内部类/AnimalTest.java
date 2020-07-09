@@ -50,7 +50,9 @@ package 匿名内部类;
 		}
 		
 		public static void main(String[] args) {
+			
 			AnimalTest at = new AnimalTest();
+			Inner in = new AnimalTest().new Inner("hh");
 			at.println();
 		}
 	 
