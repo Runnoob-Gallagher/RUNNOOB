@@ -12,11 +12,21 @@ public class Demo02FileTest {
 		//methodC();
 		//methodD();
 		methodE();
+//		methodF();
 	}
  
+	private static void methodF() {
+		// TODO Auto-generated method stub
+		File fileG = new File("E:\\Servyou\\验证");
+		File[] file = fileG.listFiles();
+		for(File filenam:file) {
+			System.out.println(filenam);
+		}
+	}
+
 	private static void methodE() {
 		// TODO Auto-generated method stub
-		File fileR = new File("E:\\Repository\\File\\src\\几把测试");
+		File fileR = new File("E:\\\\Servyou\\\\验证");
 		String[] arr = fileR.list();
 		for(String filename:arr) {
 			System.out.println(filename);
