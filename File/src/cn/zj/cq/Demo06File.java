@@ -28,7 +28,7 @@ public class Demo06File {
 			// TODO Auto-generated method stub
 			File[] fileA = file.listFiles(new Demo06FileImp());//这里面传递的是多滤器对象（实现类）----》此接口的实例可传递给 File 类的 listFiles(FileFilter) 方法。 
 			for(File fileB : fileA) {
-				if(fileB.isFile()) {  //这里我想用FileFilter去筛选想要的文件，但是接口不能直接调用方法，所以新建一个实现类去重新方法
+				if(fileB.isFile()) {  //这里我想用FileFilter去筛选想要的文件，但是接口不能直接调用方法，所以新建一个实现类去重写方法
 					System.out.println(fileB.getName());
 				}else if(fileB.isDirectory()) {
 					methodA(fileB.getAbsoluteFile());
