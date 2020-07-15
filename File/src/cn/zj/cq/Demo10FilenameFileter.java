@@ -16,7 +16,7 @@ public class Demo10FilenameFileter {
 			@Override
 			public boolean accept(File dir, String name) {
 				// TODO Auto-generated method stub
-				return new File(dir,name).isDirectory() || name.endsWith(".txt"); //这里需要注意，为什么要new一个文件对象呢，看一下API文档
+				return new File(dir,name).isDirectory() || name.endsWith(".txt");//这里需要注意，为什么要new一个文件对象呢，看一下API文档
 			}
 		});
 		for(File fileB:fileA) {
