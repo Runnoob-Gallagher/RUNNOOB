@@ -24,7 +24,7 @@ public class Demo02FileOutputStream {
 			byte[] bt = "程序员".getBytes();
 			System.out.println(Arrays.toString(bt));  //输出[-77, -52, -48, -14, -44, -79]    ---->static String toString(byte[] a)  返回指定数组内容的字符串表示形式。 
 			fos.write(bt);  //输出ABCD轆BC程序员
-			fos.close();
+			fos.close();  
 	}
 	
 
