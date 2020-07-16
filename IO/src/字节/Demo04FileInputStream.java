@@ -20,7 +20,7 @@ import java.io.IOException;
  */
 public class Demo04FileInputStream {
 	public static void main(String[] args) throws IOException {
-		FileInputStream fis = new FileInputStream("Gallagher.txt");//这个就是file文件 ，"E:\\SVN\\Gallagher.txt"就是name路径
+		FileInputStream fis = new FileInputStream("E:\\SVN\\Gallagher.txt");//这个就是file文件 ，"E:\\SVN\\Gallagher.txt"就是name路径
 	/*	int bt = fis.read();//读取文件中的一个字节，读到文件末尾返回-1
 		System.out.println(bt);
 		bt = fis.read();//读取文件中的一个字节，读到文件末尾返回-1
@@ -31,9 +31,12 @@ public class Demo04FileInputStream {
 		System.out.println(bt);
 		bt = fis.read();//读取文件中的一个字节，读到文件末尾返回-1
 		System.out.println(bt);  */
-		while(fis.read()!=-1) {   
+		int len = 0;
+		while((len = fis.read())!=-1) {   
 //			 int read()  从此输入流中读取一个数据字节   注意这个返回的是一个int值
-		System.out.println((char)fis.read());
+			//System.out.println(fis.read());
+			System.out.println((char)len);
+//			System.out.print((char)fis.read());
 		}
 		fis.close();
 	}
