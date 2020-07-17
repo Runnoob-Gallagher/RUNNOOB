@@ -26,7 +26,7 @@ public class Demo05FileInputStream {
 		 */
 		FileInputStream fis = new FileInputStream("Code_Gallagher");
 		byte[] bt = new byte[4];  //这个byte数组相当于一个缓冲区，比如这里的大小是len=20，那么就一次读取20个字节的数据放到这个数组中。
-//		System.out.println(new String(bt));
+		//System.out.println(new String(bt));
 		int len = fis.read(bt); //返回的是读取的字节的有效个数 
 //		System.out.println(new String(bt));//--->String(byte[] bytes)  通过使用平台的默认字符集解码指定的 byte 数组，构造一个新的 String。
 		while( fis.read(bt)!= -1) {
