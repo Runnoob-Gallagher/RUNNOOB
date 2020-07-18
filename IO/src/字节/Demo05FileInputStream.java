@@ -27,14 +27,16 @@ public class Demo05FileInputStream {
 		FileInputStream fis = new FileInputStream("Code_Gallagher");
 		byte[] bt = new byte[4];  //这个byte数组相当于一个缓冲区，比如这里的大小是len=20，那么就一次读取20个字节的数据放到这个数组中。
 		//System.out.println(new String(bt));
-		int len = fis.read(bt); //返回的是读取的字节的有效个数 
+		int len = 0; //返回的是读取的字节的有效个数 
+		
 //		System.out.println(new String(bt));//--->String(byte[] bytes)  通过使用平台的默认字符集解码指定的 byte 数组，构造一个新的 String。
-		while( fis.read(bt)!= -1) {
+		while( (len = fis.read(bt))!= -1) {
+//			System.out.println(len);  
 			//System.out.println(len =fis.read(bt));
-			System.out.println(Arrays.toString(bt));    //下面的打印为什么会出现空格呢？刚好是4个空格,--->一种解释是你在创建这个字节数组是就开辟了空间
-			//System.out.println(new String(bt,0,len));  这个好
+			System.out.println(new String(bt));  //下面的打印为什么会出现空格呢？刚好是4个空格,--->一种解释是你在创建这个字节数组是就开辟了空间
+			//System.out.println(new String(bt,0,2));  //这个好
 			
-		}
+		} 
 		//fos.close(); 
 		fis.close();  
 	}

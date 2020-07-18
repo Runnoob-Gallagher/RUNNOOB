@@ -29,13 +29,13 @@ public class Demo04FileInputStream {
 		System.out.println(bt);
 		bt = fis.read();//读取文件中的一个字节，读到文件末尾返回-1
 		System.out.println(bt);
-		bt = fis.read();//读取文件中的一个字节，读到文件末尾返回-1
+		bt = fis.read();//读取文件中的一个字节，读到文件末尾返回-1 
 		System.out.println(bt);  */
 		int len = 0;
 		while((len = fis.read())!=-1) {   
 //			 int read()  从此输入流中读取一个数据字节   注意这个返回的是一个int值
-			//System.out.println(fis.read());
-			System.out.println((char)len);
+			System.out.println(len); 
+			System.out.println((char)len);//如果编码是以一个字节一个字符的，可以尝试转成char，用来查看数据）。
 //			System.out.print((char)fis.read());
 		}
 		fis.close();
