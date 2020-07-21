@@ -14,3 +14,5 @@ IO流：
 	  Reader		  Writer
 
 一切皆为字节但是
+
+fighting
