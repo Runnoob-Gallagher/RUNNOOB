@@ -9,7 +9,7 @@ public class Demo06Copy {
 	public static void main(String[] args) throws IOException {
 		FileInputStream fis = new FileInputStream("E:\\TortoiseSVN\\Code_Gallagher\\sbf-app-web.war");
 		FileOutputStream fos = new FileOutputStream("E:\\SVN\\Gallagher\\sbf-app-web.war");
-		byte[] bt = new byte[1];
+		byte[] bt = new byte[1024];
 		int len = 0;
 		while((len=fis.read(bt))!=-1) {
 			fos.write(bt);;

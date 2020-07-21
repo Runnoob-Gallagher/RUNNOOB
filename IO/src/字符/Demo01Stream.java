@@ -22,12 +22,20 @@ import java.io.IOException;
 public class Demo01Stream {
 	public static void main(String[] args) throws IOException {
 		FileReader fr = new FileReader("E:\\SVN\\Gallagher.txt");
-		char[] ch = new char[2];//---->这一步是读取字符的缓冲区，这里我相当于读两个字符放在这个字符数组中
+		/*char[] ch = new char[2];//---->这一步是读取字符的缓冲区，这里我相当于读两个字符放在这个字符数组中
 		int len = 0;//---->这个定义一个变量去接收fr.read返回的值，并作为下面判断语句的条件
 		while(( len = fr.read(ch))!=-1) {//---->返回结果是读取的字节个数（当再次读时，如果返回-1说明到了结尾，没有了数据）;读取到最后一个他会返回-1 以此做判断
-//			System.out.println(len);//---->返回结果是读取的字节个数
+			System.out.println(len);//---->返回结果是读取的字节个数
 			System.out.println(new String(ch));//---->打印出字符缓冲区中的数据，为什么开始想用len，他只是一个int的返回值；
-		}  
+		}*/
+		int len = 0;
+		while((len=fr.read())!=-1) { 
+			System.out.println(len); //这里打印单个字符返回的是int数值
+			System.out.println((char)len);//这里是将这个int值转换为字符型
+			System.out.println(fr.read() + " ....");//如果打印这个你可以看到，他是每两个打印一次，也就说明了read()方法在读取之后会跳到下一个“指针”位置，也就是向后移一位
+		}
+		System.out.println((char)21592+ "    这里");
+		
 		/*int chB = fr.read();
 		System.out.println((char)chB);
 		int chC = fr.read();

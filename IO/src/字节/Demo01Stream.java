@@ -6,7 +6,7 @@ import java.io.IOException;
 /*
 	这里使用的的OutputStream  字节输出流，表示将内存中的数据写到磁盘中
 	OutoutStream是一个抽象类，表示输出字节流的所有类的超类。
-	因为这里是抽象父类，不能直接只用。那么我们这里就要使用其子类；---->FileOutputStream  文件字节输出流
+	因为这里是抽象父类，不能直接使用。那么我们这里就要使用其子类；---->FileOutputStream  文件字节输出流
 	构造方法：
 		FileOutputStream(File file) 创建一个向指定 File 对象表示的文件中写入数据的文件输出流。---->表示直接输出到指定文件中,括号中是一个文件类型的
 		FileOutputStream(String name)  创建一个向具有指定名称的文件中写入数据的输出文件流。---->表示根据文件路径去输出
