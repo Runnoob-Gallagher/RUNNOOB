@@ -13,7 +13,7 @@ public class Demo06Copy {
 		int len = 0;
 		while((len=fis.read(bt))!=-1) {
 			fos.write(bt);;
-		}
+		} 
 	
 		fos.close(); 
 		fis.close();  
