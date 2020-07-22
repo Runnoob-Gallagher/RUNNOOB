@@ -40,11 +40,12 @@ import javax.xml.crypto.Data;
 		方法摘要 
 			 void close() 关闭此流，但要先刷新它。 
 			 void flush() 刷新该流的缓冲。 
-			 void newLine() 写入一个行分隔符。 
+			 void newLine() 写入一个行分隔符。 根据不同操作系统，他回去自动匹配诶
 			 void write(char[] cbuf, int off, int len) 写入字符数组的某一部分。 
 			 void write(int c) 写入单个字符。 
 			 void write(String s, int off, int len) 写入字符串的某一部分。 
 
+		 String readLine() 读取一个文本行。 
 	 */
 public class Demo02Copy {
 	public static void main(String[] args) throws IOException {
@@ -53,7 +54,7 @@ public class Demo02Copy {
 		BufferedInputStream br = new BufferedInputStream(fd);//---->BufferedReader br = new BufferedReader(new FileReader("E:\\SVN\\Buffer");)
 		BufferedOutputStream bw = new BufferedOutputStream(fw);
 		long A = System.currentTimeMillis();
-		byte[] bt = new byte[10240];
+		byte[] bt = new byte[10240]; 
 		int len = 0;
 		while((len = br.read(bt)) != -1) {
 			bw.write(bt);
