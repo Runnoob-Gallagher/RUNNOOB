@@ -39,7 +39,7 @@ public class Demo02Client {
 //			2.使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象
 			OutputStream ops = soc.getOutputStream();
 //			3.使用网络字节输出流OutputStream对象中的write方法，给服务器发送数据
-			ops.write("This is My message".getBytes());
+			ops.write("This Is My Message".getBytes());
 //			4.使用Socket对象中的方法getInputStream(）获取网络字节输入流InputStream对象
 			InputStream ips = soc.getInputStream();
 //			5.使用网络字节输入流InpuStream对象中的read方法，接收服务器回写的数据
@@ -47,7 +47,6 @@ public class Demo02Client {
 			int len = ips.read(by);
 			System.out.println(new String (by,0,len));
 //			6.关闭资源 
-			ops.close(); //这里到底什么时候该关，关什么，先后顺序是什么
-			soc.close(); 
+			soc.close(); //这里我觉得只用关闭socket连接就行，因为下面的都是socket创建的流
 		}
 }
