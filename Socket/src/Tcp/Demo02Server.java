@@ -31,6 +31,7 @@ public class Demo02Server {
 		System.out.println(new String (by,0,len));
 		 OutputStream oup = soc.getOutputStream();
 		 oup.write("Copy That".getBytes());
+		 oup.close();
 		 soc.close();
 		 ss.close();
 	}  
