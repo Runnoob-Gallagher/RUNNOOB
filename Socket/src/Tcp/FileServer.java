@@ -22,7 +22,7 @@ public class FileServer {
 		os.write("上传成功".getBytes());
 //		fos.close();
 //		socket.close();   
-//		ss.close();
+//		ss.close(); 
 	}
 } 
 }
