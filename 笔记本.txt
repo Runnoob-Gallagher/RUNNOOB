@@ -8,7 +8,7 @@ IO流：
 
 
 字节流	字节输入流	字节输出流
-	 InputStream	OutoutStream
+	 InputStrea m	OutoutStream
 	
 字符流	字符输入流	字符输出流
 	  Reader	  	  Writer
