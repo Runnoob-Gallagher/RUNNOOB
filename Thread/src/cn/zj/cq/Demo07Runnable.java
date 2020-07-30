@@ -12,5 +12,5 @@ public class Demo07Runnable implements Runnable {
 		// TODO Auto-generated method stub
 		System.out.println(Thread.currentThread().getName());
 	}
-	 
+	
 }
