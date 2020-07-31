@@ -8,7 +8,7 @@ import java.util.function.Consumer;
 	怎么消费(使用)，需要自定义(输出，计算等等)*/
 public class Demo02Consumer {
 	public static void MethodA(String name,Consumer<String> con,int age) {
-		con.accept(name);
+		con.accept(name); 
 	}
 	public static void main(String[] args) {
 		MethodA("yangjie",(name) -> {System.out.println(name);},24);

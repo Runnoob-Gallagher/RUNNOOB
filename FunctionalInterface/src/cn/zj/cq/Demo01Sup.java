@@ -12,7 +12,7 @@ public class Demo01Sup {
 	public static void main(String[] args) {
 		int[] arryA = {11,33,22,55,77,66};
 		int answer = GetMax(() -> {
-			int Max= arryA[0] ;
+			int Max= arryA[0] ; 
 		for(int i=0;i<arryA.length;i++) {//这里也可以使用foreach
 			if(arryA[i] > Max ) {
 				Max = arryA[i];

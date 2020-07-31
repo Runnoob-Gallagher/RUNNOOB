@@ -10,15 +10,15 @@ public class Lambda {
 	public static void main(String[] args) {
 		Lambda lambda = new Lambda();
 		String something = "Lambda±Ì¥Ô Ω";
-		/*Printer printer = new Printer() {
+		Printer printer = new Printer() {
 			
 			@Override
 			public void printer(String val) {
 				// TODO Auto-generated method stub
 				System.out.println(val);
 			}
-		};*/
-		lambda.printersome(something, printer); 
+		};
+		lambda.printersome(something, printer);  
 	}
 }
  

@@ -19,5 +19,18 @@ public class Person {
 		this.age = age;
 		System.out.println("如果打印到这，说明调用了有参构造方法");
 	}
+	public String getName() {
+		return name;
+	}
+
 	
+	  public void setName(String name) { this.name = name; }
+	 
+	public int getAge() {
+		return age;
+	}
+	
+	  public void setAge(int age) { this.age = age; }
+	 
+
 }

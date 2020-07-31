@@ -22,16 +22,18 @@ public class Constract {
 		public Person CreateB(String name, int age) {
 			// TODO Auto-generated method stub
 			return new Person(name,age);
-		} 
-	}; 
+		}  
+	};  
 	YouCanCon YCC = (name,age) -> new Person(name,age);
+	YouCanCon YCCA = Person::new;
 	//YouCanCon YCCB = (name,age) -> {return new Person(name,age);};
 	public static void main(String[] args) {
 		Constract con = new Constract();
 //		NoneCanCreateA.CreateA();
-		con.NoneCanCreateA.CreateA(); //不适用lambda方法调用无参
-		con.lambdaA.CreateA();//使用lambda方法调用无参
-		con.YouCan.CreateB("yangjie", 24);
-		con.YCC.CreateB("yangjie", 25);
+//		con.NoneCanCreateA.CreateA(); //不适用lambda方法调用无参
+//		con.lambdaA.CreateA();//使用lambda方法调用无参
+		con.YouCan.CreateB("yangjie", 24); 
+		con.YCCA.CreateB("yangjie", 24);
+		System.out.println(con.YCC.CreateB("yangjie", 25).getName());//因为是这里返回了对象，所以可以直接调用gett方法返回值
 	}
 } 
