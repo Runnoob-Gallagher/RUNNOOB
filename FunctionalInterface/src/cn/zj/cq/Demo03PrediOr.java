@@ -10,8 +10,8 @@ public class Demo03PrediOr {
 	public static void main(String[] args) {
 		String strA = "Good Good Study,";
 		String strB = "Day Day Up.";
-		boolean b = Judging(strA, (String sryA) ->{
-			return sryA.contains("G");
+		boolean b = Judging(strA, (String sryD) ->{
+			return sryD.contains("G");
 		}, (String sryB) ->{
 			return sryB.length()>10;
 		}, strB);
