@@ -1,0 +1,29 @@
+package cn.yj.lpp;
+
+import java.util.Scanner;
+
+/*Scanner类的功能：实现键盘输入到程序中。
+如果需要使用其他包中的东西：
+1.导包
+import 包路径.类名称;
+如股票需要使用的目标类和当前类位于同一个包下，则省略导包语句。
+java.lang包下都不需要导包。
+2.创建
+类名称 对象名 = new 类名称():
+3.使用
+对象名.成员方法();
+
+获取键盘输入的一个int数字：int num = sc.nextInt();
+获取键盘输入的一个字符串：String str = sc.next();*/
+public class Demo01Scanner {
+    public static void main(String[] args) {
+        // 2.创建  System.in代表键盘输入
+        Scanner sc = new Scanner(System.in);
+        // 3.获取键盘输入的int数字
+        int num = sc.nextInt();
+        System.out.println("输入的int数字是：" + num);
+        // 获取键盘输入的字符串
+        String str = sc.next();
+        System.out.println("输入的String字符是" + str);
+    }
+}
