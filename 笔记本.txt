@@ -15,4 +15,12 @@
 
 一切皆为字节
 
+<<<<<<< HEAD
 fighting  的 ！！
+=======
+<<<<<<< HEAD
+fighting  ！
+=======
+fighting！！
+>>>>>>>方法 remotes/Gallagher/master
+>>>>>>> 9b7b9a29acab304d145599711b90106b3e145ac2

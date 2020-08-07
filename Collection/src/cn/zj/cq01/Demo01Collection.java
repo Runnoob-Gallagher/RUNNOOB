@@ -22,6 +22,12 @@ public class Demo01Collection {
 		boolean boolB = collA.remove("白龙马");//这里返回错误，因为你已经删除
 		System.out.println(boolB);
 		System.out.println(collA);
+		Collection<String> collB = new HashSet<String>();
+		collB.add("唐");
+		collB.add("猪八");
+		collB.add("白龙");
+		collA.addAll(collB);
+		collA.removeAll(collB);
 		/*
 		 * 下面同理的方法： public boolean contains(E e): 判断当前集合中是否包含给定的对象。
 		 *  public boolean isEmpty(): 判断当前集合是否为空。 
