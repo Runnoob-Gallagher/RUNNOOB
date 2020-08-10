@@ -6,4 +6,4 @@ public class CalculatorTest {
 		int result = Ca.add(1, 3);
 		System.out.println(result);
 	}
-}
+} 

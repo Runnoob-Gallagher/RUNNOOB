@@ -39,7 +39,7 @@ public class GetFiled {
 		 */
 		Field[] fieldD = personclass.getDeclaredFields();//获取所有的属性，不考虑是什么修饰的
 		for (Field field : fieldD) {
-			System.out.println(field);  
+			System.out.println(field);   
 		}
 		System.out.println("----------");
 		Field fieldE = personclass.getDeclaredField("Sex");
